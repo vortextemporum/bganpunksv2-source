@@ -1,0 +1,152 @@
+html,body {overflow-x: hidden}
+
+
+
+@font-face {
+  font-family: 'Charriot Deluxe';
+  
+  src: url('./fonts/Charriot Deluxe.woff') format('woff'),
+      url('./fonts/Charriot Deluxe.woff2') format('woff2'),
+      url('./fonts/Charriot Deluxe.ttf') format('truetype'),
+       url("./fonts/Charriot Deluxe.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+
+}
+
+@layer utilities {
+  .text-gradient {
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.textstroke {
+  -webkit-text-stroke: 1px black;
+
+  text-shadow:
+      3px 3px 0 #000,
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+.charriot {
+  font-family: "Charriot Deluxe";
+}
+
+
+.text-blau {
+  color: #296588!important
+}
+
+.pageboxborder {
+  border-radius: 4px;
+  border-color: #003760;
+
+}
+.pageboxshadow {
+  box-shadow: 0.625rem 0.625rem 0 #003760
+}
+
+.bg-pinku {
+  background-color: rgba(255, 192, 203,var(--tw-bg-opacity));
+}
+.bg-yellu {
+  background-color: rgba(255, 223, 177,var(--tw-bg-opacity));
+}
+.bg-grunu {
+  background-color: rgba(177, 255, 190,var(--tw-bg-opacity));
+}
+.bg-orangu {
+  background-color: rgba(255, 208, 177,var(--tw-bg-opacity));
+}
+
+.bg-blau {
+  background-color: rgba(41, 101, 136,var(--tw-bg-opacity));
+}
+.vw8 {
+  font-size: 8vw;
+}
+
+.vw7 {
+  font-size: 7vw;
+}
+
+.vw6 {
+  font-size: 6vw;
+}
+.vw5 {
+  font-size: 5vw;
+}
+
+.vw4 {
+  font-size: 4vw;
+}
+
+.vw3 {
+  font-size: 3vw;
+}
+.vw2-5 {
+  font-size: 2.5vw;
+}
+.vw2 {
+  font-size: 2vw;
+}
+.vw1-75 {
+  font-size: 1.75vw;
+}
+.vw1-50 {
+  font-size: 1.50vw;
+}
+.vw1-25 {
+  font-size: 1.25vw;
+}
+.vw1 {
+  font-size: 1vw;
+}
+
+.shakebutton:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+.loadingtx {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 2s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg) ; }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+@media screen and (max-width:500px) {.gallery { padding: 0 1rem; } }
+
+/* input[type=file]::file-selector-button {
+  border: 2px solid #6c5ce7;
+  padding: .2em .4em;
+  border-radius: .2em;
+  background-color: #a29bfe;
+  transition: 1s;
+}
+
+input[type=file]::file-selector-button:hover {
+  background-color: #81ecec;
+  border: 2px solid #00cec9;
+} */
